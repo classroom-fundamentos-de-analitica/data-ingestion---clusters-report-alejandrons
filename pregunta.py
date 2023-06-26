@@ -41,7 +41,6 @@ def ingest_data():
         line[2] = line[2].replace(',','.')
         line[2] = float(line[2])
         line[-1] = line[-1].rstrip('. ')
-        line[-1] = line[-1].replace('-',' ')
     
     df = pd.DataFrame(data,columns=head)
 
